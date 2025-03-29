@@ -5,7 +5,7 @@
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?style=for-the-badge)
 ![License](https://img.shields.io/badge/license-MIT-green.svg?style=for-the-badge)
 ![Node](https://img.shields.io/badge/node-v14+-orange.svg?style=for-the-badge)
-[![Stars](https://img.shields.io/github/stars/DEMO/rome-whatsapp-bot?style=for-the-badge)](https://github.com/DEMO/rome-whatsapp-bot/stargazers)
+[![Stars](https://img.shields.io/github/stars/DEMO/rome-whatsapp-bot?style=for-the-badge)](https://github.com/dinethnethsara/rome-bot/stargazers)
 
 <p align="center">
   <img src="/api/placeholder/400/320" alt="ROME WhatsApp Bot Logo">
@@ -78,7 +78,7 @@
 
 1️⃣ **Clone the repository**
 ```bash
-git clone https://github.com/dinethnethsara/rome-whatsapp-bot.git
+git clone https://github.com/dinethnethsara/rome-bot.git
 cd rome-whatsapp-bot
 ```
 
