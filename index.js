@@ -13,8 +13,29 @@ const client = new Client({
     authStrategy: new LocalAuth(),
     puppeteer: {
         headless: true,
-        args: ['--no-sandbox']
+        args: [
+            '--no-sandbox',
+            '--disable-setuid-sandbox',
+            '--disable-dev-shm-usage',
+            '--disable-accelerated-2d-canvas',
+            '--no-first-run',
+            '--no-zygote',
+            '--disable-gpu',
+            '--single-process',
+            '--disable-features=site-isolation-trial-opt-out',
+            '--allow-insecure-localhost',
+            '--disable-web-security',
+            '--disable-features=IsolateOrigins,site-per-process'
+        ],
+        ignoreDefaultArgs: ['--disable-extensions'],
+        executablePath: 'C:\Program Files\Google\Chrome\Application\chrome.exe'
     }
+});
+
+// Error handling for browser launch
+client.initialize().catch(err => {
+    console.error('Failed to initialize client:', err);
+    process.exit(1);
 });
 
 // Function to change display picture
